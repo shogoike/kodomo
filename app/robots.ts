@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://kodomo.vercel.app/sitemap.xml',
+    sitemap: 'https://kodomo-zeta.vercel.app/sitemap.xml',
   };
 }

@@ -85,6 +85,10 @@ vercel --prod
 ### Google Search Consoleへの登録
 
 1. [Google Search Console](https://search.google.com/search-console) にアクセス
-2. プロパティを追加（デプロイ後のVercel URL）
+2. プロパティを追加: `https://kodomo-zeta.vercel.app`
 3. 所有権の確認
-4. サイトマップを送信: `https://your-domain.vercel.app/sitemap.xml`
+4. サイトマップを送信: `https://kodomo-zeta.vercel.app/sitemap.xml`
+
+## デプロイURL
+
+本番環境: https://kodomo-zeta.vercel.app
