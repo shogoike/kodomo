@@ -60,7 +60,7 @@ export default function Home() {
             弁輪計算
           </h1>
           <p className="text-center text-sm text-gray-600 mb-8">
-            Z=0の弁輪径を計算します
+            弁輪径を計算します
           </p>
 
           <div className="space-y-5">
