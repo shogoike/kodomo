@@ -248,6 +248,83 @@ export default function Home() {
               <strong>注意:</strong> この計算ツールは参考値です。実際の臨床判断には、必ず文献の原著や専門家の意見を参照してください。計算式の係数は一般的な値を使用しており、実際の臨床使用前に原著論文で確認する必要があります。
             </p>
           </div>
+
+          {/* 参考文献 */}
+          <div className="mt-6 p-6 bg-gray-50 rounded-lg border border-gray-300">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">参考文献</h3>
+            <div className="space-y-3 text-sm text-gray-700">
+              <div>
+                <p className="font-semibold text-gray-800">PHN/Lopez</p>
+                <p className="ml-4">
+                  Lopez L, et al. Recommendations for quantification methods during the performance of a pediatric echocardiogram.{' '}
+                  <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/20620859/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                  >
+                    J Am Soc Echocardiogr. 2010;23(5):465-95.
+                  </a>
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-gray-800">Pettersen 2008</p>
+                <p className="ml-4">
+                  Pettersen MD, et al. Regression equations for calculation of z scores of cardiac structures in a large cohort of healthy infants, children, and adolescents.{' '}
+                  <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/18559201/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                  >
+                    J Am Soc Echocardiogr. 2008;21(8):922-34.
+                  </a>
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-gray-800">Boston (BCH/Colan)</p>
+                <p className="ml-4">
+                  Sluysmans T, Colan SD. Theoretical and empirical derivation of cardiovascular allometric relationships in children.{' '}
+                  <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/15735044/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                  >
+                    J Appl Physiol. 2005;99(2):445-57.
+                  </a>
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-gray-800">Cantinotti (2014/2017)</p>
+                <p className="ml-4">
+                  Cantinotti M, et al. Nomograms for two-dimensional echocardiography derived valvular and arterial dimensions in Caucasian children.{' '}
+                  <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/28110790/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                  >
+                    J Cardiothorac Surg. 2017;12(1):11.
+                  </a>
+                </p>
+                <p className="ml-4 mt-1">
+                  Cantinotti M, et al. Echocardiographic nomograms for chamber diameters and areas in Caucasian children.{' '}
+                  <a
+                    href="https://pubmed.ncbi.nlm.nih.gov/25260402/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                  >
+                    J Am Soc Echocardiogr. 2014;27(12):1279-92.
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
