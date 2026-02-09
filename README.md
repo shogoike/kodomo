@@ -1,15 +1,28 @@
 # 心エコー Z値計算ツール
 
-小児心エコー検査における弁輪径のZ値計算ツールです。
+小児心エコー検査における弁輪径のZ値を計算するオンラインツールです。
 
 ## 機能
 
-- PHN/Lopez
-- Pettersen 2008
-- Boston (BCH/Colan系)
-- Cantinotti (2014/2017)
+### 対応している計算方法
+- **PHN/Lopez**: 体重の平方根を用いた線形回帰式
+- **Pettersen 2008**: BSAを用いた線形回帰式
+- **Boston (BCH/Colan)**: BSAの平方根を用いた線形回帰式
+- **Cantinotti (2014/2017)**: BSAの平方根を用いた線形回帰式
 
-上記4つの正規化式に基づいて、Z=0の弁輪径を計算します。
+### 対応している弁/血管
+- 大動脈弁
+- 僧帽弁
+- 肺動脈弁
+- 三尖弁
+- LPA（左肺動脈）
+- RPA（右肺動脈）
+
+### 表示内容
+- 4つの計算方法 × 6つの弁/血管 = 24通りの結果を一度に表示
+- 計算過程の詳細表示（BSA、√BSA、√体重など）
+- 使用した係数の詳細表示
+- モバイル対応のレスポンシブデザイン
 
 ## 使い方
 
@@ -39,3 +52,39 @@ npm start
 - React 19
 - TypeScript
 - Tailwind CSS
+
+## Vercelへのデプロイ
+
+### 方法1: Vercelダッシュボードから（推奨）
+
+1. [Vercel](https://vercel.com) にアクセス
+2. GitHubアカウントでログイン
+3. "Add New..." → "Project" をクリック
+4. GitHubリポジトリを選択
+5. "Deploy" をクリック
+
+自動的にビルドとデプロイが実行されます。今後のGitHubへのpushも自動的にデプロイされます。
+
+### 方法2: Vercel CLIを使用
+
+```bash
+npm install -g vercel
+vercel login
+vercel --prod
+```
+
+## SEO対策
+
+このプロジェクトには以下のSEO対策が含まれています：
+
+- メタデータの最適化（タイトル、説明、キーワード）
+- Open Graphタグ
+- robots.txt（自動生成）
+- sitemap.xml（自動生成）
+
+### Google Search Consoleへの登録
+
+1. [Google Search Console](https://search.google.com/search-console) にアクセス
+2. プロパティを追加（デプロイ後のVercel URL）
+3. 所有権の確認
+4. サイトマップを送信: `https://your-domain.vercel.app/sitemap.xml`
