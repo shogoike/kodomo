@@ -57,7 +57,7 @@ export default function Home() {
       <div className="max-w-6xl mx-auto">
         <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
           <h1 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6">
-            心エコー Z値計算
+            弁輪計算
           </h1>
           <p className="text-center text-sm text-gray-600 mb-8">
             Z=0の弁輪径を計算します
